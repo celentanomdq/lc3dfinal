@@ -1,0 +1,618 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color:rgb(255, 255, 255) ;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+}
+
+h1, h2 {
+    font-family: 'Archivo Black', sans-serif;
+    color:rgb(11, 71, 236) ;
+    font-size: 4rem;
+    margin: 30px;
+    padding: 50px;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.header{
+    width: 100%;
+    height: 200px;
+    display:flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    align-content: center;
+   
+   
+  
+}  
+.logo{
+    position: relative;
+    margin-left: 80px;
+   border-radius: 20px;
+   width: 100px;
+   padding: 10px;
+   position: fixed;
+  
+}
+.nav{
+    display: flex;
+    margin: 0;
+    padding: 0;
+   
+}
+   
+.header nav ul {
+    position: relative;
+    right: 90px;
+    list-style-type: none;
+    z-index: 1;
+   
+    
+    
+}
+.header nav ul li {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+  
+}
+.header nav ul li a {
+    color: #fff;
+    font-size: 1.3rem;
+
+}
+.header a:hover{
+    opacity: 0.5;
+
+}
+
+.videoheader{
+position:absolute;
+width: 100%;
+height: 300px;
+    left: 0;
+    margin: 0;
+    object-fit: cover;
+    
+
+}
+a{
+    color:#f8edeb;
+    font-size: 1.7rem;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.content{ 
+    width: 100%;
+	position: relative;
+     top: 350px;
+     z-index:-1;
+}
+.cards{
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: row;
+    border-radius: 3px;
+    position: relative;
+    top:200px;
+}
+.carditem1{
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    background-color:rgb(217, 241, 255) ;
+    padding: 10px;
+    font-size: 2rem;
+    opacity: 0.7;
+   
+    
+}
+
+.carditem2{
+   
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color:rgb(217, 241, 255) ;
+    padding: 10px;
+    opacity: 0.7;
+  
+}
+.imgcard{
+    height: 212px;
+    width: 100%;
+    object-fit: cover;
+}
+a.cardbutton{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 1.5rem;
+    margin: auto;
+    width: 160px;
+    height: 40px;
+    padding: 5px;
+    background-color: rgb(8, 32, 245);  
+    line-height: 40px;
+    z-index: 2;
+     
+}
+
+.cardbutton:hover{
+ 
+ background-color:#000;
+
+}
+h3{
+    font-size: 2rem;
+    padding: 20px;
+    margin: 0;
+    
+}
+.nosotros{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contenidonosotros{
+    width: 300px;
+    height: auto;
+    font-size: 2rem;
+    padding-right: 60px;
+    text-align: center
+}
+.contenidonosotros p{
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+    color:#000 ;
+    
+}
+.somos{
+    display: flex;
+    justify-content: center;
+    justify-content: flex-end;
+    
+}
+.img3d{
+    height: 600px;
+    width: 600px;
+}
+.modelado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.modeladovideo{
+    position: absolute;
+    color:#fff;
+    font-size: 2rem;
+    opacity: 0.65;
+    margin-top: 300px;
+   
+
+}
+.video{ display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    margin-top: 100px;
+    width: 100%;
+   
+
+}
+.itemvideo{
+    width: 700px;
+    height: 400px;
+}
+.servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    
+
+}
+.contenidoservicios{
+    width:100%;
+    text-align: center;
+ 
+}
+.h2servicios{
+    margin-top: 100px;
+    padding: 0;
+}
+
+.galeriagrid{
+    display: grid;
+    padding: 80px;
+    gap: 20px;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+  
+}
+.griditem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.galeriaimg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+p{
+    color:#000;
+    font-size: 2rem;
+    padding: 50px;
+    margin: 0;
+}
+.cartel{
+    padding-top: 50px;
+   width: 95%;
+   margin:auto ;
+   overflow: hidden;
+}
+.cartel ul {
+    display: flex;
+    padding: 0;
+    width: 100%;
+    animation: cambio  20s infinite alternate linear;
+    
+
+}
+.cartel li{
+    list-style: none;
+    width: 200%;
+}
+.cartel img{
+    width: 90%;
+}
+footer{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+@keyframes cambio{
+    0%{ margin-left:  -100%;}
+    100%{ margin-left: 100%;}
+
+
+}
+
+/*contactos*/
+.contactobody {
+    background: #333;
+    
+}
+
+.formularioflex{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:  50px 50px;
+    position: relative;
+    top: 200px;
+}
+.form{
+    flex: 1;
+    text-align: center;
+    padding: 30px;
+}
+.form__input{
+    width: 100%;
+    padding: 7px;
+    margin: 6px 0;
+    border: none;
+    border-bottom: 3px solid #1c7;
+    background: transparent;
+    color: #fff;
+
+}
+.form__input:focus {
+    background:linear-gradient(to bottom, transparent, #222 );
+    outline: none;
+    border-bottom: 3px solid #5f9;
+}
+.form textarea{
+    min-height: 140px;
+    resize: none;
+
+}
+.form-img{
+   flex: 1;
+   padding: 10px;
+   display: flex;
+   min-width:300px ;
+}
+.form-img div{
+    padding: 10px;
+   
+}
+.img-container{
+    padding: 20px;
+    margin: auto;
+    
+}
+.img-container div{
+    background-color:#fff;
+    border-radius: 50%;
+    text-align: center;
+    padding: 40px;
+}
+.form-img img{
+    width: 90%;
+    margin: auto; 
+}
+.form input[type="submit"] {
+    background-color: #094;
+    border-bottom: none;
+    padding: 12px;
+}
+form input[type="submit"]:hover {
+    background-color: #0724;
+    border-bottom: none;
+    padding: 12px;
+}
+
+.footercontactos{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    line-height: 50px;
+}
+.footercontactos p{
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+
+}
+
+@media  screen and (min-width: 481px) and (max-width: 768px){
+    
+    .header nav ul li a {
+        color: #fff;
+        font-size: 1rem;
+    }
+    .header nav ul {
+        right: 10px;}
+        
+
+
+    .logo{
+       
+       width: 90px;
+       height: 90px;
+       margin-left: 10px;
+      
+    }
+
+
+    a{
+       
+        font-size: 0.7rem;
+        margin: 0;
+        padding: 0;
+    }
+    .content{ 
+         top:300px;
+        }
+      .cards { 
+        position: relative;
+    top:150px;}
+    
+    .carditem1{
+        width: 220px;
+    }
+    .carditem2{
+       
+        width: 220px;
+    }
+    a.cardbutton{
+        
+        font-size: 1rem;
+        width: 100px;
+        height: 30px;
+        padding: 5px; 
+        line-height: 30px;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    .contenidonosotros {
+        padding: 0;
+        margin: 8px;
+     }
+
+
+    .contenidonosotros p{
+       font-size: 1.1rem;
+    }
+    
+        
+    .itemvideo
+    {
+        width: 350px;
+        height: 200px;
+    }   
+    
+    .servicios p{
+        font-size: 1.2rem;
+    }
+    
+    
+    .contenidoservicios{
+        width: auto;
+    }
+    .h2servicios{
+        font-size: 2.5rem;
+    }
+    
+    .modeladovideo{
+        
+        font-size: 1.3rem;
+        margin-top: 175px;
+    }
+    .footer p{
+        font-size: 1rem
+
+    
+    }
+      
+/* contacto*/
+
+    .contacto{     
+        position: relative;
+        top:50px;
+        
+    }
+    .footercontactos p{
+        font-size: 1.2rem;
+        
+    }
+    .form{
+        flex: 1;
+        text-align: center;
+        padding:10px;}
+
+    .formularioflex{
+       padding:0;
+    } 
+    .form-img{
+      min-width: 200px;
+    } 
+   
+}
+@media  screen and (min-width: 320px) and (max-width: 480px){
+    
+    .header{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+
+    }
+    .logo{
+        position:relative ;
+        display:inline-block;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .header ul{
+       display: none;
+    }
+    
+    .content{ 
+         top: 100px;
+        }
+    .cards{
+        top:120px;
+    }
+    .carditem1{
+        width: 150px;
+    }
+    .carditem2{
+       
+        width: 150px;
+    }
+    a.cardbutton{
+        
+        font-size: 1rem;
+        width: 100px;
+        height: 30px;
+        padding: 5px; 
+        line-height: 30px;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    .contenidonosotros {
+        padding: 0;
+        margin: 8px;
+     }
+
+
+    .contenidonosotros p{
+       font-size: 1.1rem;
+    }
+    
+        
+    .itemvideo
+    {
+        width: 250px;
+        height: 200px;
+    }   
+    
+    .servicios p{
+        font-size: 1.2rem;
+    }
+    
+    
+    .contenidoservicios{
+        width: auto;
+    }
+    .h2servicios{
+        font-size: 2.5rem;
+    }
+    
+    .modeladovideo{
+        display: none;
+    }
+    .galeriagrid{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer p{
+        font-size: 1rem;}
+
+/* contacto*/
+.header{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.logo{
+    display:inline-block;
+    margin: 0;
+    padding: 0;
+    
+}
+ 
+.footercontactos p{
+    font-size: 1.2rem;
+    
+
+}
+.form-img{
+       
+    display:none;
+}
+}
