@@ -1,0 +1,61 @@
+/*operadores*/
+
+$alto: 1000px;
+$ancho: 500px;
+
+.box{
+    height: $alto;
+    width: $alto + $ancho;
+}
+ 
+.box2{
+    height: $alto;
+    width: $alto *2;
+}
+.box3{
+    height: $alto /2;
+    width: $alto /4;
+}
+/*extend*/
+
+.divbox{
+    height: 500px;
+    width: 250px;
+    border: 1px solid black;
+    background-color: red;
+    color: red;
+}
+.divbox2{
+@extend .divbox;
+border-radius: 10px;;
+}
+/* mixin */
+
+@mixin card ($alto, $ancho) {
+    height:$alto ;
+    width: $ancho;
+}
+.card1{
+
+    @include card (500px, 1000px);
+}
+.card2{
+    @include card ( 200px, 400px);
+}
+@mixin conOperadores($valornumerico) {
+    height: $valornumerico *2;
+    width: $valornumerico /2;
+}
+.cardconoperadores{
+    @include conOperadores(1000px)
+}
+@mixin cardflex($display, $direction, $justify,) {
+display: $display;
+flex-direction: $direction;
+justify-content: $justify;
+    
+}
+.divcardflex{
+    @include cardflex(flex, row,  center,  );
+    @include card(1000px, 750px,);
+}
