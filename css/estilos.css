@@ -86,7 +86,7 @@ height: 150px;
     width: 100%;
 	position: relative;
      top: 650px;
-     z-index:-1;
+     
 }
 .cards{
     display: flex;
@@ -197,6 +197,7 @@ h3{
     opacity: 0.65;
     margin-top: 300px;
    
+   
 
 }
 .video{ display: flex;
@@ -206,6 +207,7 @@ h3{
     z-index: 1;
     margin-top: 100px;
     width: 100%;
+   
    
 
 }
@@ -520,18 +522,22 @@ form input[type="submit"]:hover {
 
     header label{
         display: block;
+      
     }
     .menu{
-        position: absolute;
-        width: 70%;
-       margin-left:-70%;
+        position: fixed;
+        width: 100%;
+       margin-left:-100%;
+       z-index: 2;
     }
     .menu ul{
         flex-direction: column;
         background-color: rgb(58, 121, 121);
+ 
     }
     .menu li{
         border-top: 1px solid #fff;
+        text-align: center;
     }
     
     #btn-menu:checked ~ .menu{
@@ -562,10 +568,11 @@ form input[type="submit"]:hover {
     a.cardbutton{
         
         font-size: 1rem;
-        width: 100px;
+        width:100px;
         height: 30px;
         padding: 5px; 
         line-height: 30px;
+        text-align: center;
     }
     h1{
         font-size: 2.5rem;
